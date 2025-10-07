@@ -1,2 +1,2 @@
-.aider*
-nara/.env
+# Aider files (subdirectories only)
+**/.aider*
