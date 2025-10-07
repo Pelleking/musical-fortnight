@@ -1,9 +1,11 @@
 import './App.css'
+import Search from './components/search'
 
 function App() {
   return (
     <>
-      <h1>Nara är bäst!</h1>
+     
+        <Search />
     </>
   )
 }
