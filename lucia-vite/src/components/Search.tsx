@@ -16,7 +16,11 @@ export default function Search({ onSearch, placeholder = 'Search...' }: SearchPr
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(e.target.value);
+    const newQuery = e.target.value;
+    setQuery(newQuery);
+    if (onSearch) {
+      onSearch(newQuery);
+    }
   };
 
   return (

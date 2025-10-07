@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "category": "Electronics",
+    "description": "High-quality wireless headphones with noise cancellation"
+  },
+  {
+    "id": 2,
+    "title": "Organic Green Tea",
+    "category": "Food & Beverage",
+    "description": "Premium organic green tea leaves from Japan"
+  },
+  {
+    "id": 3,
+    "title": "Yoga Mat",
+    "category": "Sports & Fitness",
+    "description": "Non-slip yoga mat with carrying strap"
+  },
+  {
+    "id": 4,
+    "title": "Mechanical Keyboard",
+    "category": "Electronics",
+    "description": "RGB mechanical keyboard with blue switches"
+  },
+  {
+    "id": 5,
+    "title": "Running Shoes",
+    "category": "Sports & Fitness",
+    "description": "Lightweight running shoes with cushioned sole"
+  },
+  {
+    "id": 6,
+    "title": "Coffee Maker",
+    "category": "Home & Kitchen",
+    "description": "Programmable coffee maker with thermal carafe"
+  },
+  {
+    "id": 7,
+    "title": "Notebook Set",
+    "category": "Stationery",
+    "description": "Set of 3 hardcover notebooks with dotted pages"
+  },
+  {
+    "id": 8,
+    "title": "Wireless Mouse",
+    "category": "Electronics",
+    "description": "Ergonomic wireless mouse with adjustable DPI"
+  },
+  {
+    "id": 9,
+    "title": "Plant-Based Protein Powder",
+    "category": "Food & Beverage",
+    "description": "Vegan protein powder with natural flavors"
+  },
+  {
+    "id": 10,
+    "title": "Desk Lamp",
+    "category": "Home & Kitchen",
+    "description": "LED desk lamp with adjustable brightness"
+  }
+]
