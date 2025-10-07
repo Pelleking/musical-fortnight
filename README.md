@@ -17,14 +17,14 @@ You are doing great work. Keep going, keep asking questions, and keep cheering e
 - `johan/`: Vite + React starter playground.
 - `lucia-vite/`: Minimal Vite + React example.
 - `nara/`: Vite + React starter playground.
-- `pelle-musical/pelle-musical-vite`: (Vite + React).
+- `pelle-musical-vite/`: (Vite + React).
 
 Each folder is a small app you can run locally. Feel free to branch, tweak, and share!
 
 ### Quick start (run any app)
 1) Open a terminal and move into a project folder, for example:
 ```bash
-cd pelle-musical/pelle-musical-vite
+cd pelle-musical-vite
 ```
 
 2) Install dependencies (use your preferred package manager):
