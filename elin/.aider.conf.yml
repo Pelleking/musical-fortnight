@@ -1,0 +1,5 @@
+model: gpt-4o
+edit_format: diff
+auto_commit: true
+gitignore: true
+conventions: aider.conventions.md
