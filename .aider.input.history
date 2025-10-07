@@ -34,3 +34,36 @@
 
 # 2025-10-07 13:54:28.417705
 +crteate an json object with example data with dogs also use labradoodle as one as the dogs
+
+# 2025-10-07 14:02:09.349322
++create a minimalistic search components, with button... the search results should come from mockup.json
+
+# 2025-10-07 14:02:15.080800
++n
+
+# 2025-10-07 14:02:32.360532
++mockup.json
+
+# 2025-10-07 14:02:56.018367
++pelle-musical-vite/src/components/search.tsx
+
+# 2025-10-07 14:02:58.891571
++y
+
+# 2025-10-07 14:03:09.656645
++mockup.json
+
+# 2025-10-07 14:03:44.244668
++inside pelle-musical-vite/src/components/search.tsx
+
+# 2025-10-07 14:03:48.284353
++y
+
+# 2025-10-07 14:04:24.998588
++implement the search.tsx to retrieve data from mockup.json
+
+# 2025-10-07 14:12:02.206361
++create a new component called "searchResults" and move the search results part into it from search.tsx
+
+# 2025-10-07 14:12:42.722303
++yes
