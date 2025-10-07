@@ -1,0 +1,49 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Max",
+      "breed": "Labradoodle",
+      "age": 3,
+      "color": "Golden",
+      "weight": 65,
+      "temperament": "Friendly and energetic"
+    },
+    {
+      "id": 2,
+      "name": "Bella",
+      "breed": "Golden Retriever",
+      "age": 5,
+      "color": "Golden",
+      "weight": 70,
+      "temperament": "Gentle and loyal"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "breed": "German Shepherd",
+      "age": 4,
+      "color": "Black and Tan",
+      "weight": 85,
+      "temperament": "Intelligent and protective"
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "breed": "Beagle",
+      "age": 2,
+      "color": "Tricolor",
+      "weight": 25,
+      "temperament": "Curious and friendly"
+    },
+    {
+      "id": 5,
+      "name": "Cooper",
+      "breed": "Border Collie",
+      "age": 6,
+      "color": "Black and White",
+      "weight": 45,
+      "temperament": "Highly intelligent and active"
+    }
+  ]
+}
