@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
+*.debug
+*.aider
+!.aider.conf.yml
