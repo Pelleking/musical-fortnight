@@ -22,7 +22,10 @@ const search = () => {
           className="w-full pl-10 pr-4 py-3 text-base border-2 border-gray-300 rounded-lg outline-none transition-colors focus:border-indigo-500"
         />
       </div>
-      <button className="px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors">
+      <button onClick={() => {
+        console.log('Search')
+      }} 
+      className="px-6 py-3 bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-600 transition-colors">
         Search
       </button>
     </div>
