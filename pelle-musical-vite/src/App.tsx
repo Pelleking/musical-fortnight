@@ -3,10 +3,9 @@ import Search from './components/search'
 
 function App() {
   return (
-    <>
-     
-        <Search />
-    </>
+    <div className="flex items-center justify-center min-h-screen bg-gray-50">
+      <Search />
+    </div>
   )
 }
 
