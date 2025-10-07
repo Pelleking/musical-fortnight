@@ -33,7 +33,6 @@ function App() {
     )
     
     setFilteredResults(results)
-    console.log('Search query:', query, 'Results:', results.length)
   }
 
   return (

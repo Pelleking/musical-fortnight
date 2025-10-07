@@ -27,7 +27,7 @@ export default function Search({ onSearch, placeholder = 'Search...' }: SearchPr
     <form onSubmit={handleSubmit} className="w-full max-w-md">
       <div className="relative">
         <input
-          type="text"
+          type="search"
           value={query}
           onChange={handleChange}
           placeholder={placeholder}
@@ -36,6 +36,7 @@ export default function Search({ onSearch, placeholder = 'Search...' }: SearchPr
         <button
           type="submit"
           className="absolute right-2 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
+          aria-label="Search"
         >
           <svg
             className="w-5 h-5"
@@ -43,6 +44,7 @@ export default function Search({ onSearch, placeholder = 'Search...' }: SearchPr
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"
