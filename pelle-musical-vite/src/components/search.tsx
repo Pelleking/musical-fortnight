@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import mockupData from '../assets/mockup.json'
 import SearchResults from './searchResults'
 import Button from './button'
@@ -40,6 +40,14 @@ const search = () => {
     setResults(filtered)
     setCurrentPage(1)
   }, [searchQuery, filterDogs])
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      handleSearch()
+    }, 300)
+
+    return () => clearTimeout(timeoutId)
+  }, [searchQuery, handleSearch])
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
