@@ -21,7 +21,7 @@ const SearchResults = ({ results, searchQuery }: SearchResultsProps) => {
           {results.map((dog) => (
             <div
               key={dog.id}
-              className="p-4 bg-white border-2 border-gray-200 rounded-lg hover:border-indigo-300 transition-colors"
+              className="p-4 rounded-lg transition-all duration-300 bg-white/70 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-xl hover:bg-white/80 hover:border-indigo-300/50"
             >
               <div className="flex justify-between items-start">
                 <div>
@@ -43,7 +43,7 @@ const SearchResults = ({ results, searchQuery }: SearchResultsProps) => {
       )}
 
       {searchQuery && results.length === 0 && (
-        <div className="w-full p-4 text-center text-gray-500">
+        <div className="w-full p-4 text-center text-gray-500 rounded-lg bg-white/70 backdrop-blur-md border border-white/20 shadow-lg">
           No dogs found matching "{searchQuery}"
         </div>
       )}

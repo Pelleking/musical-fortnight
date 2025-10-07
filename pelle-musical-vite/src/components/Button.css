@@ -1,0 +1,97 @@
+:root {
+  --angle: 0turn;
+}
+
+@keyframes rainbow {
+  100% {
+    --angle: 1turn;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+}
+
+.button {
+  --gray: #454449;
+  --black: #32352a;
+  --padding: 10px;
+  --brad: 18px;
+  font-size: 14px;
+  display: inline-grid;
+  grid-template-areas: "button";
+  /* GLASS */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: var(--brad);
+  border: 0;
+  padding: var(--padding);
+  --blur: 1px;
+  --white: rgba(255, 255, 255, 1);
+  --blackBorder: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px var(--blur) 0 var(--white), 0 1px var(--blur) 0 var(--white),
+    1px 1px var(--blur) 0 var(--blackBorder), -1px 0 var(--blur) 0 var(--blackBorder), 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.button > * {
+  scale: 1;
+}
+
+.button:active:before,
+.button:active:after,
+.button:active .text {
+  scale: 0.9;
+}
+
+.button:active:after {
+  --blur: 6.9px;
+  --padding: 5px;
+  animation-play-state: paused;
+}
+
+.button:after {
+  /* GRADIENT */
+  content: "";
+  --offset: 10px;
+  --walk: calc(var(--padding) * -1);
+  width: calc(100% + var(--padding) * 2);
+  height: calc(100% + var(--padding) * 2);
+  z-index: 0;
+  transform: translate(var(--walk), var(--walk));
+  border-radius: var(--brad);
+  --blur: 32px;
+  filter: blur(var(--blur));
+  opacity: 0.6;
+  grid-area: button;
+  /* Conic rainbow graident */
+  animation: rainbow 3s linear infinite;
+  background: conic-gradient(from var(--angle), #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+}
+
+.button:before {
+  /* BLACK BUTTON */
+  content: "";
+  /* Gradient from gray to black */
+  background: linear-gradient(to bottom, var(--gray), var(--black));
+  grid-area: button;
+  padding: 8px;
+  z-index: 1;
+  border-radius: calc(var(--brad) - var(--padding));
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button .text {
+  /* BLACK CIRCLE */
+  background: linear-gradient(to bottom, var(--black), var(--gray));
+  border-radius: 100px;
+  color: #e9e9e9;
+  grid-area: button;
+  padding: 0px 16px;
+  margin: 8px;
+  z-index: 2;
+}

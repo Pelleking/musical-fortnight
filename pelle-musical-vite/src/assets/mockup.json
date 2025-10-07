@@ -44,6 +44,52 @@
       "color": "Black and White",
       "weight": 45,
       "temperament": "Highly intelligent and active"
+    },
+    {
+      "id": 6,
+      "name": "Milo",
+      "breed": "French Bulldog",
+      "age": 3,
+      "color": "Brindle",
+      "weight": 28,
+      "temperament": "Playful and affectionate"
+    },
+    {
+      "id": 7,
+      "name": "Daisy",
+      "breed": "Cocker Spaniel",
+      "age": 4,
+      "color": "Golden Brown",
+      "weight": 32,
+      "temperament": "Cheerful and loving"
+    },
+    {
+      "id": 8,
+      "name": "Rocky",
+      "breed": "Boxer",
+      "age": 7,
+      "color": "Fawn",
+      "weight": 80,
+      "temperament": "Loyal and energetic"
+    },
+    {
+      "id": 9,
+      "name": "Willow",
+      "breed": "Siberian Husky",
+      "age": 5,
+      "color": "Gray and White",
+      "weight": 60,
+      "temperament": "Friendly and adventurous"
+    },
+    {
+      "id": 10,
+      "name": "Teddy",
+      "breed": "Cavalier King Charles Spaniel",
+      "age": 2,
+      "color": "Chestnut and White",
+      "weight": 20,
+      "temperament": "Gentle and affectionate"
     }
   ]
 }
+

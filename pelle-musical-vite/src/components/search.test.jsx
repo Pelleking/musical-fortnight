@@ -294,28 +294,26 @@ describe('Search Component', () => {
         'pr-4',
         'py-3',
         'text-base',
-        'border-2',
-        'border-gray-300',
         'rounded-lg',
         'outline-none',
-        'transition-colors',
-        'focus:border-indigo-500'
+        'transition-all',
+        'duration-300',
+        'bg-white/70',
+        'backdrop-blur-md',
+        'border',
+        'border-white/20',
+        'shadow-lg',
+        'hover:shadow-xl',
+        'focus:shadow-2xl',
+        'focus:bg-white/80',
+        'focus:border-indigo-300/50'
       )
     })
 
     it('should have correct CSS classes on button', () => {
       render(<Search />)
       const button = screen.getByRole('button', { name: /search/i })
-      expect(button).toHaveClass(
-        'px-6',
-        'py-3',
-        'bg-indigo-500',
-        'text-white',
-        'font-medium',
-        'rounded-lg',
-        'hover:bg-indigo-600',
-        'transition-colors'
-      )
+      expect(button).toHaveClass('button')
     })
   })
 })
