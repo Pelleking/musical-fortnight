@@ -25,4 +25,4 @@ dist-ssr
 
 # Custom
 .aider*
-nara/.env
+.env
