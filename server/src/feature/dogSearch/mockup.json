@@ -1,0 +1,184 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Bosse",
+      "breed": "Labradoodle",
+      "age": 3,
+      "color": "Golden",
+      "weight": 65,
+      "temperament": "Friendly and energetic"
+    },
+    {
+      "id": 2,
+      "name": "Bella",
+      "breed": "Golden Retriever",
+      "age": 5,
+      "color": "Golden",
+      "weight": 70,
+      "temperament": "Gentle and loyal"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "breed": "German Shepherd",
+      "age": 4,
+      "color": "Black and Tan",
+      "weight": 85,
+      "temperament": "Intelligent and protective"
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "breed": "Beagle",
+      "age": 2,
+      "color": "Tricolor",
+      "weight": 25,
+      "temperament": "Curious and friendly"
+    },
+    {
+      "id": 5,
+      "name": "Cooper",
+      "breed": "Border Collie",
+      "age": 6,
+      "color": "Black and White",
+      "weight": 45,
+      "temperament": "Highly intelligent and active"
+    },
+    {
+      "id": 6,
+      "name": "Milo",
+      "breed": "French Bulldog",
+      "age": 3,
+      "color": "Brindle",
+      "weight": 28,
+      "temperament": "Playful and affectionate"
+    },
+    {
+      "id": 7,
+      "name": "Daisy",
+      "breed": "Cocker Spaniel",
+      "age": 4,
+      "color": "Golden Brown",
+      "weight": 32,
+      "temperament": "Cheerful and loving"
+    },
+    {
+      "id": 8,
+      "name": "Rocky",
+      "breed": "Boxer",
+      "age": 7,
+      "color": "Fawn",
+      "weight": 80,
+      "temperament": "Loyal and energetic"
+    },
+    {
+      "id": 9,
+      "name": "Willow",
+      "breed": "Siberian Husky",
+      "age": 5,
+      "color": "Gray and White",
+      "weight": 60,
+      "temperament": "Friendly and adventurous"
+    },
+    {
+      "id": 10,
+      "name": "Teddy",
+      "breed": "Cavalier King Charles Spaniel",
+      "age": 2,
+      "color": "Chestnut and White",
+      "weight": 20,
+      "temperament": "Gentle and affectionate"
+    },
+    {
+      "id": 11,
+      "name": "Max",
+      "breed": "Rottweiler",
+      "age": 6,
+      "color": "Black and Tan",
+      "weight": 110,
+      "temperament": "Confident and protective"
+    },
+    {
+      "id": 12,
+      "name": "Sadie",
+      "breed": "Poodle",
+      "age": 4,
+      "color": "White",
+      "weight": 50,
+      "temperament": "Intelligent and elegant"
+    },
+    {
+      "id": 13,
+      "name": "Duke",
+      "breed": "Great Dane",
+      "age": 3,
+      "color": "Blue",
+      "weight": 140,
+      "temperament": "Gentle giant and friendly"
+    },
+    {
+      "id": 14,
+      "name": "Rosie",
+      "breed": "Shih Tzu",
+      "age": 5,
+      "color": "Gold and White",
+      "weight": 15,
+      "temperament": "Affectionate and outgoing"
+    },
+    {
+      "id": 15,
+      "name": "Zeus",
+      "breed": "Doberman Pinscher",
+      "age": 4,
+      "color": "Black and Rust",
+      "weight": 95,
+      "temperament": "Alert and loyal"
+    },
+    {
+      "id": 16,
+      "name": "Penny",
+      "breed": "Dachshund",
+      "age": 3,
+      "color": "Red",
+      "weight": 22,
+      "temperament": "Brave and curious"
+    },
+    {
+      "id": 17,
+      "name": "Oscar",
+      "breed": "Australian Shepherd",
+      "age": 2,
+      "color": "Blue Merle",
+      "weight": 55,
+      "temperament": "Energetic and smart"
+    },
+    {
+      "id": 18,
+      "name": "Ruby",
+      "breed": "Pomeranian",
+      "age": 4,
+      "color": "Orange",
+      "weight": 8,
+      "temperament": "Bold and lively"
+    },
+    {
+      "id": 19,
+      "name": "Bruno",
+      "breed": "Bulldog",
+      "age": 5,
+      "color": "White and Brindle",
+      "weight": 50,
+      "temperament": "Calm and courageous"
+    },
+    {
+      "id": 20,
+      "name": "Chloe",
+      "breed": "Yorkshire Terrier",
+      "age": 3,
+      "color": "Blue and Tan",
+      "weight": 7,
+      "temperament": "Feisty and affectionate"
+    }
+  ]
+}
