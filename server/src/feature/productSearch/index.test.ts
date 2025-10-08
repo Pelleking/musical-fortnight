@@ -1,6 +1,6 @@
 import { deepEqual } from 'node:assert/strict'
 import { test } from "node:test"
-import { productSearch } from ''
+import { productSearch } from './search'
 
 test('it works', () => {
     deepEqual(0, 0);
