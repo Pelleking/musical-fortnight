@@ -89,7 +89,96 @@
       "color": "Chestnut and White",
       "weight": 20,
       "temperament": "Gentle and affectionate"
+    },
+    {
+      "id": 11,
+      "name": "Max",
+      "breed": "Rottweiler",
+      "age": 6,
+      "color": "Black and Tan",
+      "weight": 110,
+      "temperament": "Confident and protective"
+    },
+    {
+      "id": 12,
+      "name": "Sadie",
+      "breed": "Poodle",
+      "age": 4,
+      "color": "White",
+      "weight": 50,
+      "temperament": "Intelligent and elegant"
+    },
+    {
+      "id": 13,
+      "name": "Duke",
+      "breed": "Great Dane",
+      "age": 3,
+      "color": "Blue",
+      "weight": 140,
+      "temperament": "Gentle giant and friendly"
+    },
+    {
+      "id": 14,
+      "name": "Rosie",
+      "breed": "Shih Tzu",
+      "age": 5,
+      "color": "Gold and White",
+      "weight": 15,
+      "temperament": "Affectionate and outgoing"
+    },
+    {
+      "id": 15,
+      "name": "Zeus",
+      "breed": "Doberman Pinscher",
+      "age": 4,
+      "color": "Black and Rust",
+      "weight": 95,
+      "temperament": "Alert and loyal"
+    },
+    {
+      "id": 16,
+      "name": "Penny",
+      "breed": "Dachshund",
+      "age": 3,
+      "color": "Red",
+      "weight": 22,
+      "temperament": "Brave and curious"
+    },
+    {
+      "id": 17,
+      "name": "Oscar",
+      "breed": "Australian Shepherd",
+      "age": 2,
+      "color": "Blue Merle",
+      "weight": 55,
+      "temperament": "Energetic and smart"
+    },
+    {
+      "id": 18,
+      "name": "Ruby",
+      "breed": "Pomeranian",
+      "age": 4,
+      "color": "Orange",
+      "weight": 8,
+      "temperament": "Bold and lively"
+    },
+    {
+      "id": 19,
+      "name": "Bruno",
+      "breed": "Bulldog",
+      "age": 5,
+      "color": "White and Brindle",
+      "weight": 50,
+      "temperament": "Calm and courageous"
+    },
+    {
+      "id": 20,
+      "name": "Chloe",
+      "breed": "Yorkshire Terrier",
+      "age": 3,
+      "color": "Blue and Tan",
+      "weight": 7,
+      "temperament": "Feisty and affectionate"
     }
   ]
 }
-
