@@ -1,11 +1,10 @@
 interface Dog {
-  id: number
+  id: string
   name: string
   breed: string
   age: number
   color: string
-  weight: number
-  temperament: string
+  size: string
 }
 
 interface SearchResultsProps {
@@ -34,8 +33,7 @@ const SearchResults = ({ results, searchQuery }: SearchResultsProps) => {
               </div>
               <div className="mt-2 text-sm text-gray-600">
                 <p>Color: {dog.color}</p>
-                <p>Weight: {dog.weight} lbs</p>
-                <p className="mt-1 italic">{dog.temperament}</p>
+                <p>Size: {dog.size}</p>
               </div>
             </div>
           ))}

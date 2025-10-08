@@ -1,57 +1,85 @@
-import { useState, useMemo, useCallback, useEffect } from 'react'
-import mockupData from '../assets/mockup.json'
+import { useState, useEffect } from 'react'
 import SearchResults from './searchResults'
-import Button from './button'
-
+import Button from './button'       
 interface Dog {
-  id: number
+  id: string
   name: string
   breed: string
   age: number
   color: string
-  weight: number
-  temperament: string
+  size: string
 }
 
 const search = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [results, setResults] = useState<Dog[]>([])
   const [currentPage, setCurrentPage] = useState(1)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const resultsPerPage = 3
 
-  const filterDogs = useCallback((query: string): Dog[] => {
-    if (!query.trim()) {
-      return []
+  const fetchDogs = async (query: string): Promise<Dog[]> => {
+    try {
+      const url = query.trim() 
+        ? `http://localhost:3000/dogSearch?query=${encodeURIComponent(query)}`
+        : 'http://localhost:3000/dogSearch'
+      
+      const response = await fetch(url)
+
+      console.log('response', response)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
+      const data = await response.json()
+      return data
+    } catch (err) {
+      console.error('Error fetching dogs:', err)
+      throw err
     }
-
-    const lowerQuery = query.toLowerCase()
-    return mockupData.dogs.filter((dog) => {
-      return (
-        dog.name.toLowerCase().includes(lowerQuery) ||
-        dog.breed.toLowerCase().includes(lowerQuery) ||
-        dog.color.toLowerCase().includes(lowerQuery) ||
-        dog.temperament.toLowerCase().includes(lowerQuery)
-      )
-    })
-  }, [])
-
-  const handleSearch = useCallback(() => {
-    const filtered = filterDogs(searchQuery)
-    setResults(filtered)
-    setCurrentPage(1)
-  }, [searchQuery, filterDogs])
+  }
 
   useEffect(() => {
+    const handleSearch = async () => {
+      setError(null)
+      
+      try {
+        const filtered = await fetchDogs(searchQuery)
+        setResults(filtered)
+        setCurrentPage(1)
+      } catch (err) {
+        setError('Failed to fetch search results. Please try again.')
+        setResults([])
+      }
+    }
+
     const timeoutId = setTimeout(() => {
       handleSearch()
     }, 300)
 
     return () => clearTimeout(timeoutId)
-  }, [searchQuery, handleSearch])
+  }, [searchQuery])
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
-      handleSearch()
+      e.preventDefault()
+    }
+  }
+
+  const handleManualSearch = async () => {
+    setIsLoading(true)
+    setError(null)
+    
+    try {
+      const filtered = await fetchDogs(searchQuery)
+      setResults(filtered)
+      setCurrentPage(1)
+    } catch (err) {
+      setError('Failed to fetch search results. Please try again.')
+      setResults([])
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -96,8 +124,18 @@ const search = () => {
               className="w-full pl-10 pr-4 py-3 text-base rounded-lg outline-none transition-all duration-300 bg-white/70 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-xl focus:shadow-2xl focus:bg-white/80 focus:border-indigo-300/50"
             />
           </div>
-          <Button onClick={handleSearch}>Search</Button>
+          <Button onClick={handleManualSearch} disabled={isLoading}>
+            {isLoading ? 'Searching...' : 'Search'}
+          </Button>
         </div>
+
+        {error && (
+          <div className="w-full px-4">
+            <div className="p-3 rounded-lg bg-red-100 border border-red-300 text-red-700">
+              {error}
+            </div>
+          </div>
+        )}
 
         {totalPages > 1 && (
           <div className="flex items-center gap-4 px-4">
